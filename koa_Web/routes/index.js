@@ -6,13 +6,23 @@ router.get('/', async (ctx, next) => {
   })
 })
 
-router.get('/string', async (ctx, next) => {
-  ctx.body = 'koa2 string'
+router.get('/profile/:who', async (ctx, next) => {
+  const  ID  = ctx.params.who;
+  console.log(ctx.params);
+  ctx.body = {
+    title: "who's profile ",
+    ID: ID
+  }
 })
 
-router.get('/json', async (ctx, next) => {
+router.get('/loadMore/:who/:page', async (ctx, next) => {
+  const  ID  = ctx.params.who;
+  const  page  = ctx.params.page;
+  console.log(ctx.params);
   ctx.body = {
-    title: 'koa2 json'
+    title: "load what",
+    ID: ID,
+    page:page
   }
 })
 

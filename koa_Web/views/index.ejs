@@ -7,5 +7,15 @@
   <body>
     <h1><%= title %></h1>
     <p>EJS Welcome to <%= title %></p>
+    <p><%=locals.baby%></p>
+
+    <%if(locals.bady == null){%>
+      <%for(var i=0;i<10;i++){%>
+        <p>no baby here</p>
+      <%}%>
+    <%}%>
+
+    <%-include('component/login_form',{})%>
+
   </body>
 </html>
