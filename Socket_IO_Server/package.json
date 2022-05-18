@@ -1,0 +1,21 @@
+{
+  "name": "socket_io_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.0.0",
+    "koa2-cors": "^2.0.6",
+    "socket.io": "^4.5.1"
+  }
+}
